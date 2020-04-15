@@ -10,7 +10,12 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "apollo-boost": "^0.4.7",
+    "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3",
     "react": "^16.13.1",
+    "react-apollo": "^3.1.5",
+    "react-apollo-hooks": "^0.5.0",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "typescript": "~3.7.2"
@@ -19,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate": "graphql-codegen"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +41,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.13.2",
+    "@graphql-codegen/introspection": "^1.13.2",
+    "@graphql-codegen/typescript": "^1.13.2",
+    "@graphql-codegen/typescript-operations": "^1.13.2",
+    "@graphql-codegen/typescript-react-apollo": "^1.13.2"
   }
 }
